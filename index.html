@@ -1,109 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>tech blog</title>
+    <title>TechConnect Blog</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <div class="header">
-        <div class="logo">
-            <h2>TechConnect<span class="blue-text">.io</span></h2>
-        </div>
-
-        <div class="nav">
-            <a href="index.html" class="active">Home</a>
-            <a href="#">About Us</a>
+        <h2 class="logo">TechConnect<span>.io</span></h2>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
         </div>
     </div>
 
-    <div class="tech">
-        <h1>Explore the Future of Technology</h1>
-        <p>Articles, tutorials, and insights on Web Development, Cloud Computing, and AI.</p>
+    <div class="hero">
+        <h1>Welcome to My Tech Blog</h1>
+        <p>I write about web dev, cloud, and programming stuff.</p>
     </div>
 
-    <div class="tags">
-        <button class="btn active">All Posts</button>
-        <button class="btn">Web dev</button>
-        <button class="btn">Cloud</button>
-        <button class="btn">DevOps</button>
-        <button class="btn">AI & Data</button>
+    <div class="category-buttons">
+        <button>All</button>
+        <button>Web Dev</button>
+        <button>Cloud</button>
+        <button>DevOps</button>
+        <button>AI</button>
     </div>
 
-    <div class="container">
+    <br>
 
-        <div class="posts">
+    <div class="main-container">
 
-            <div class="blog">
-                <div class="img-box">
-                    <img src="we.png" alt="Web Dev">
-                    <span class="badge">Web Dev</span>
-                </div>
+        <div class="left-content">
 
-                <div class="blog-details">
+            <div class="card">
+                <img src="images/webdev.jpg" alt="web dev picture" width="300">
+                <div class="card-info">
+                    <span class="tag">Web Dev</span>
                     <h3>HTML and CSS Layout Basics</h3>
-                    <p>Learn how to build responsive web pages using modern CSS layouts and simple tags.</p>
+                    <p>Learn how to make simple responsive websites with HTML tags and basic CSS.</p>
+                    <a href="post1.html">Read More</a>
                 </div>
             </div>
 
-            <div class="blog">
-                <div class="img-box">
-                    <img src="image.png" alt="Cloud">
-                    <span class="badge">Cloud</span>
-                </div>
-
-                <div class="blog-details">
+            <div class="card">
+                <img src="images/cloud.jpg" alt="cloud picture" width="300">
+                <div class="card-info">
+                    <span class="tag">Cloud</span>
                     <h3>Introduction to Cloud Computing</h3>
-                    <p>A beginner-friendly overview of cloud architecture and modern hosting solutions.</p>
+                    <p>A simple guide to understanding cloud hosting, AWS basics, and servers.</p>
+                    <a href="post2.html">Read More</a>
                 </div>
             </div>
 
-            <div class="blog">
-                <div class="img-box">
-                    <img src="github.png" alt="GitHub">
-                    <span class="badge">DevOps</span>
-                </div>
-
-                <div class="blog-details">
+            <div class="card">
+                <img src="images/github.jpg" alt="github picture" width="300">
+                <div class="card-info">
+                    <span class="tag">DevOps</span>
                     <h3>Git & GitHub Essentials</h3>
-                    <p>Understand how to track code changes, manage branches, and collaborate effortlessly.</p>
+                    <p>How to upload your code to GitHub and save different versions of your projects.</p>
+                    <a href="post3.html">Read More</a>
                 </div>
             </div>
 
-            <div class="blog">
-                <div class="img-box">
-                    <img src="ai.png" alt="AI">
-                    <span class="badge">AI & Data</span>
-                </div>
-
-                <div class="blog-details">
-                    <h3>Getting Started with AI Workflows</h3>
-                    <p>Discover how modern AI tools and agents are transforming backend workflows.</p>
+            <div class="card">
+                <img src="images/ai.jpg" alt="ai picture" width="300">
+                <div class="card-info">
+                    <span class="tag">AI</span>
+                    <h3>Getting Started with AI</h3>
+                    <p>Exploring how new AI tools help developers write code faster.</p>
+                    <a href="post4.html">Read More</a>
                 </div>
             </div>
 
         </div>
 
-        <div class="sidebar">
-            <h3>Trending Posts</h3>
-
-            <div class="trending-item">
-                <a href="article.html">1. Mastering Flexbox vs Grid</a>
-            </div>
-
-            <div class="trending-item">
-                <a href="article.html">2. How Cloud Storage Works</a>
-            </div>
-
-            <div class="trending-item">
-                <a href="article.html">3. Web Performance Tips</a>
-            </div>
-
-            <div class="trending-item">
-                <a href="article.html">4. Beginner's Guide to Linux</a>
-            </div>
+        <div class="right-sidebar">
+            <h3>Trending Topics</h3>
+            <ul>
+                <li><a href="#">Flexbox vs CSS Grid</a></li>
+                <li><a href="#">What is Cloud Storage?</a></li>
+                <li><a href="#">How to speed up your website</a></li>
+                <li><a href="#">Linux commands for beginners</a></li>
+            </ul>
         </div>
 
     </div>
