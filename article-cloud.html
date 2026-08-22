@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Architect Basics | TechInsight</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">Tech<span>Insight</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="article.html" class="active">Articles</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="read-container">
+        
+        <header class="article-top">
+            <div class="meta-group">
+                <span class="tag-badge" style="position:static;">Cloud</span>
+                <span style="font-size:0.85rem; color:var(--text-mute);">7 min read</span>
+            </div>
+            <h1>Cloud Architect Basics: Understanding Scalable Infrastructure</h1>
+            
+            <div class="byline">
+                <img src="cloud.png" alt="Author Sarah Chen" class="pic-round">
+                <div class="byline-text">
+                    <div class="name">sheel gangwar</div>
+                    <div class="date">Published on March 18, 2026</div>
+                </div>
+            </div>
+        </header>
+
+        <img src="cloud.png" alt="Cloud Infrastructure Illustration" class="main-article-img">
+
+        <article class="article-content">
+            <p>Cloud computing has transformed how modern software is architected, deployed, and managed. Instead of maintaining physical server hardware, engineers now leverage virtualized resources on demand.</p>
+            
+            <h2>1. Service Models: IaaS, PaaS, and SaaS</h2>
+            <p>Understanding the distinction between Infrastructure as a Service, Platform as a Service, and Software as a Service is critical when designing cloud-native solutions for modern scale.</p>
+
+            <blockquote>
+                "The primary benefit of cloud architecture is enabling developers to focus on application logic rather than server infrastructure."
+            </blockquote>
+
+            <h2>2. Sample Configuration Example</h2>
+            <p>Here is a basic YAML docker configuration for cloud container setup:</p>
+
+<pre><code>version: '3.8'
+services:
+  app:
+    image: nginx:alpine
+    ports:
+      - "8080:80"</code></pre>
+
+            <h2>Conclusion</h2>
+            <p>A solid foundation in cloud infrastructure principles enables developers to deploy resilient and automatically scalable applications.</p>
+        </article>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 TechInsightCell. Built with raw HTML & CSS.</p>
+    </footer>
+
+</body>
+</html>

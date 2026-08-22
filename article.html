@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS Layout Basics | TechInsight</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">Tech<span>Insight</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="article.html" class="active">Articles</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="read-container">
+        
+        <header class="article-top">
+            <div class="meta-group">
+                <span class="tag-badge" style="position:static;">Web Development</span>
+                <span style="font-size:0.85rem; color:var(--text-mute);">5 min read</span>
+            </div>
+            <h1>HTML and CSS Layout Basics: Building Raw Responsive Visual Components</h1>
+            
+            <div class="byline">
+                <img src="html.png" alt="Author Alex Rivera" class="pic-round">
+                <div class="byline-text">
+                    <div class="name">Priya Tiwari</div>
+                    <div class="date">Published on March 15, 2026</div>
+                </div>
+            </div>
+        </header>
+
+        <img src="html.png" alt="HTML CSS layout illustration" class="main-article-img">
+
+        <article class="article-content">
+            <p>In modern web development, constructing clean, readable, and responsive visual components is a primary skill. Instead of relying heavily on large frameworks, mastering pure HTML semantic elements and native CSS layout models allows developers to create lightweight and efficient frontend experiences.</p>
+            
+            <h2>1. The Foundation: Flexbox and CSS Grid</h2>
+            <p>Flexbox excels at alignment along a single axis—either horizontal rows or vertical columns. Conversely, CSS Grid provides a comprehensive two-dimensional layout system, letting developers structure entire page layouts or sophisticated UI components precisely within rows and columns, with minimum effort.</p>
+
+            <blockquote>
+                "Using Flexbox and Grid allows developers to achieve powerful, dynamic layouts without extra JavaScript, reducing code overhead substantially."
+            </blockquote>
+
+            <h2>2. Basic CSS Code Structure Example</h2>
+            <p>Here is how easy it is to define a grid layout for a component using raw CSS:</p>
+
+<pre><code>.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}</code></pre>
+
+            <h2>Conclusion</h2>
+            <p>A solid grasp of raw HTML structure and CSS layout logic allows developers to build robust, performant components from the ground up, reducing dependency weight and enhancing page accessibility.</p>
+        </article>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 TechInsightCell. Built with raw HTML & CSS.</p>
+    </footer>
+
+</body>
+</html>

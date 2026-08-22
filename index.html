@@ -1,93 +1,163 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>TechConnect Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechInsight | Curated Tech Blog</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="header">
-        <h2 class="logo">TechConnect<span>.io</span></h2>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </div>
-
-    <div class="hero">
-        <h1>Welcome to My Tech Blog</h1>
-        <p>I write about web dev, cloud, and programming stuff.</p>
-    </div>
-
-    <div class="category-buttons">
-        <button>All</button>
-        <button>Web Dev</button>
-        <button>Cloud</button>
-        <button>DevOps</button>
-        <button>AI</button>
-    </div>
-
-    <br>
-
-    <div class="main-container">
-
-        <div class="left-content">
-
-            <div class="card">
-                <img src="images/webdev.jpg" alt="web dev picture" width="300">
-                <div class="card-info">
-                    <span class="tag">Web Dev</span>
-                    <h3>HTML and CSS Layout Basics</h3>
-                    <p>Learn how to make simple responsive websites with HTML tags and basic CSS.</p>
-                    <a href="post1.html">Read More</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="cloud.jpg" alt="cloud picture" width="300">
-                <div class="card-info">
-                    <span class="tag">Cloud</span>
-                    <h3>Introduction to Cloud Computing</h3>
-                    <p>A simple guide to understading cloud hosting, AWS basics, and servers.</p>
-                    <a href="post2.html">Read More</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="github.jpg" alt="github picture" width="300">
-                <div class="card-info">
-                    <span class="tag">DevOps</span>
-                    <h3>Git & GitHub Essential</h3>
-                    <p>How to upload your code to GitHub and save different versions of your projects.</p>
-                    <a href="post3.html">Read More</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="ai.jpg" alt="ai picture" width="300">
-                <div class="card-info">
-                    <span class="tag">AI</span>
-                    <h3>Getting Started with AI</h3>
-                    <p>Exploring how new AI tools help developers write code faster.</p>
-                    <a href="post4.html">Read More</a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="right-sidebar">
-            <h3>Trending Topics</h3>
-            <ul>
-                <li><a href="#">Flexbox vs CSS Grid</a></li>
-                <li><a href="#">What is Cloud Storage?</a></li>
-                <li><a href="#">How to seed up your website</a></li>
-                <li><a href="#">Linux commands for beginners</a></li>
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">Tech<span>Insight</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="article.html">Articles</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">About</a></li>
             </ul>
         </div>
+    </header>
 
-    </div>
+    <section class="hero-banner">
+        <div class="hero-inner">
+            <h1>Stay Ahead of the Future</h1>
+            <p>Curated insights and tutorials on Web Development, Cloud Infrastructure, DevOps, and Emerging AI.</p>
+        </div>
+    </section>
+
+    <main class="container">
+        
+        <div class="filter-bar">
+            <button class="tab is-active">Latest Posts</button>
+            <button class="tab">Web Dev</button>
+            <button class="tab">Cloud & Infra</button>
+            <button class="tab">DevOps</button>
+            <button class="tab">Data & AI</button>
+        </div>
+
+        <div class="main-layout">
+            
+            <section class="articles-grid">
+                
+                <article class="card">
+                    <div class="card-img-holder">
+                        <span class="tag-badge">Web Dev</span>
+                        <img src="html.png" alt="HTML and CSS Layout Basics">
+                    </div>
+                    <div class="card-body">
+                        <h3>HTML and CSS Layout Basics</h3>
+                        <p>Learn to build clean, responsive visual components using modern layout techniques, Flexbox, and CSS Grid tags.</p>
+                        <div class="card-footer">
+                            <span>5 min read</span>
+                            <a href="article.html" class="read-btn">Read Article &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-img-holder">
+                        <span class="tag-badge">Cloud</span>
+                        <img src=" cloud.png" alt="Cloud Architecture Guide">
+                    </div>
+                    <div class="card-body">
+                        <h3>Cloud Architect Basics</h3>
+                        <p>A beginner-friendly breakdown of core architecture principles, serverless paradigms, and modern hosting.</p>
+                        <div class="card-footer">
+                            <span>7 min read</span>
+                            <a href="article-cloud.html" class="read-btn">Read Article &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-img-holder">
+                        <span class="tag-badge">DevOps</span>
+                        <img src="git.png" alt="Git essentials">
+                    </div>
+                    <div class="card-body">
+                        <h3>Git & GitHub Essentials</h3>
+                        <p>Essential workflow guide to master version control, collaboration, and branch management without frameworks.</p>
+                        <div class="card-footer">
+                            <span>4 min read</span>
+                            <a href="article-git.html" class="read-btn">Read Article &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-img-holder">
+                        <span class="tag-badge">AI & Data</span>
+                        <img src="aiwork.png " alt="AI workflows">
+                    </div>
+                    <div class="card-body">
+                        <h3>Getting Started with AI Workflows</h3>
+                        <p>Understand how modern large language models, structured data pipelines, and agent agents are transforming development.</p>
+                        <div class="card-footer">
+                            <span>6 min read</span>
+                            <a href="article-ai.html" class="read-btn">Read Article &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+
+            <aside class="sidebar">
+                <div class="box">
+                    <h3 class="box-title">Trending This Week</h3>
+                    <ul class="trending-list">
+                        
+                        <li class="trending-item">
+                            <a href="article.html">
+                                <span class="trend-number">1.</span>
+                                <div class="trend-content">
+                                    <h4>Deep Dive: Flexbox vs Grid</h4>
+                                    <span class="trend-meta">12k views • 5 mins read</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="trending-item">
+                            <a href="article-cloud.html">
+                                <span class="trend-number">2.</span>
+                                <div class="trend-content">
+                                    <h4>Modern State Management Guide</h4>
+                                    <span class="trend-meta">8.5k views • 6 mins read</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="trending-item">
+                            <a href="article-git.html">
+                                <span class="trend-number">3.</span>
+                                <div class="trend-content">
+                                    <h4>Cloud Cost Optimization</h4>
+                                    <span class="trend-meta">6.2k views • 7 mins read</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="trending-item">
+                            <a href="article-ai.html">
+                                <span class="trend-number">4.</span>
+                                <div class="trend-content">
+                                    <h4>Intro to LLM Fine-tuning</h4>
+                                    <span class="trend-meta">4.1k views • 8 mins read</span>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 TechInsightCell. Built strictly with raw HTML & CSS. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
